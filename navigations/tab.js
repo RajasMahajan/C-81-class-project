@@ -9,7 +9,7 @@ const Tab = createBottomTabNavigator();
 const BottomTabNavigator =()=>{
      return(
           <Tab.Navigator
-          screenOptions={{(route)} =>({
+          screenOptions={({route}) =>({
            tabBarIcon:({focused,color,size}) =>{
           let iconName;
           if(route.name='feed'){
@@ -35,3 +35,4 @@ const BottomTabNavigator =()=>{
 
      )
 }
+export default  BottomTabNavigator
