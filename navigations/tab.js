@@ -12,12 +12,12 @@ const BottomTabNavigator =()=>{
           screenOptions={({route}) =>({
            tabBarIcon:({focused,color,size}) =>{
           let iconName;
-          if(route.name='feed'){
+          if(route.name==='feed'){
                iconName=focused ? 'create': 'create-outline';
 
           }
-          else if(route.name='createpost'){
-               iconsNmae-focused ? 'create' : 'create-outline'
+          else if(route.name==='createpost'){
+               iconName=focused ? 'create' : 'create-outline'
           }
           return <Ionicons name={iconName} size={size} color={color}/>
            }
